@@ -12,9 +12,9 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
-	@IBAction func buttonClicked(sender: AnyObject) {
-		let url = NSURL(string: "https://www.youtube.com/watch?v=an3XVTc1KsI")!
-		assert(UIApplication.sharedApplication().canOpenURL(url))
+	@IBAction func buttonClicked(_ sender: AnyObject) {
+		let url = URL(string: "https://www.youtube.com/watch?v=an3XVTc1KsI")!
+		assert(UIApplication.shared().canOpenURL(url))
 	}
 
 }
